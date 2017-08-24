@@ -1,0 +1,385 @@
+// 0
+listVertex.push_back(0);
+listVertex.push_back(0);
+listVertex.push_back(0);
+
+// 1
+listVertex.push_back(-0.2);
+listVertex.push_back(0);
+listVertex.push_back(0);
+
+// 2
+listVertex.push_back(-0.3);
+listVertex.push_back(0);
+listVertex.push_back(-0.6);
+
+// 3
+listVertex.push_back(-0.4);
+listVertex.push_back(0.2);
+listVertex.push_back(-0.6);
+
+// 4
+listVertex.push_back(-0.5);
+listVertex.push_back(0.65);
+listVertex.push_back(-0.6);
+
+// 5
+listVertex.push_back(-0.4);
+listVertex.push_back(0.8);
+listVertex.push_back(-0.6);
+
+// 6
+listVertex.push_back(-0.2);
+listVertex.push_back(0.85);
+listVertex.push_back(-0.6);
+
+// 7
+listVertex.push_back(0);
+listVertex.push_back(0.85);
+listVertex.push_back(-0.6);
+
+// 8
+listVertex.push_back(0.2);
+listVertex.push_back(0.85);
+listVertex.push_back(-0.6);
+
+// 9
+listVertex.push_back(0.4);
+listVertex.push_back(0.8);
+listVertex.push_back(-0.6);
+
+// 10
+listVertex.push_back(0.5);
+listVertex.push_back(0.65);
+listVertex.push_back(-0.6);
+
+// 11
+listVertex.push_back(0.4);
+listVertex.push_back(0.2);
+listVertex.push_back(-0.6);
+
+// 12
+listVertex.push_back(0.3);
+listVertex.push_back(0);
+listVertex.push_back(-0.6);
+
+// 13
+listVertex.push_back(0.2);
+listVertex.push_back(0);
+listVertex.push_back(0);
+
+// 14
+listVertex.push_back(-0.4);
+listVertex.push_back(0.5);
+listVertex.push_back(0);
+
+// 15
+listVertex.push_back(-0.4);
+listVertex.push_back(0.6);
+listVertex.push_back(-0.1);
+
+// 16
+listVertex.push_back(-0.37);
+listVertex.push_back(0.7);
+listVertex.push_back(-0.2);
+
+// 17
+listVertex.push_back(-0.2);
+listVertex.push_back(0.8);
+listVertex.push_back(-0.3);
+
+// 18
+listVertex.push_back(0);
+listVertex.push_back(0.8);
+listVertex.push_back(-0.3);
+
+// 19
+listVertex.push_back(0.2);
+listVertex.push_back(0.8);
+listVertex.push_back(-0.3);
+
+// 20
+listVertex.push_back(0.37);
+listVertex.push_back(0.7);
+listVertex.push_back(-0.2);
+
+// 21
+listVertex.push_back(0.4);
+listVertex.push_back(0.6);
+listVertex.push_back(-0.1);
+
+// 22
+listVertex.push_back(0.4);
+listVertex.push_back(0.5);
+listVertex.push_back(0);
+
+// 23
+listVertex.push_back(0);
+listVertex.push_back(0.6);
+listVertex.push_back(0);
+
+// 24
+listVertex.push_back(-0.3);
+listVertex.push_back(0.56);
+listVertex.push_back(0);
+
+// 25
+listVertex.push_back(0.3);
+listVertex.push_back(0.56);
+listVertex.push_back(0);
+    
+    
+    
+
+// 0
+listIndex.push_back(0);
+listIndex.push_back(14);
+listIndex.push_back(1);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(24);
+listIndex.push_back(14);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(23);
+listIndex.push_back(24);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(25);
+listIndex.push_back(23);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(22);
+listIndex.push_back(25);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(13);
+listIndex.push_back(22);
+
+// 1
+listIndex.push_back(14);
+listIndex.push_back(24);
+listIndex.push_back(15);
+
+// 1
+listIndex.push_back(24);
+listIndex.push_back(16);
+listIndex.push_back(15);
+
+// 1
+listIndex.push_back(24);
+listIndex.push_back(17);
+listIndex.push_back(16);
+
+// 1
+listIndex.push_back(24);
+listIndex.push_back(18);
+listIndex.push_back(17);
+
+// 1
+listIndex.push_back(24);
+listIndex.push_back(23);
+listIndex.push_back(18);
+
+// 1
+listIndex.push_back(23);
+listIndex.push_back(25);
+listIndex.push_back(18);
+
+// 1
+listIndex.push_back(25);
+listIndex.push_back(19);
+listIndex.push_back(18);
+
+// 1
+listIndex.push_back(25);
+listIndex.push_back(20);
+listIndex.push_back(19);
+
+// 1
+listIndex.push_back(25);
+listIndex.push_back(21);
+listIndex.push_back(20);
+
+// 1
+listIndex.push_back(25);
+listIndex.push_back(22);
+listIndex.push_back(21);
+
+// 1
+listIndex.push_back(1);
+listIndex.push_back(3);
+listIndex.push_back(2);
+
+// 1
+listIndex.push_back(1);
+listIndex.push_back(14);
+listIndex.push_back(3);
+
+// 1
+listIndex.push_back(14);
+listIndex.push_back(4);
+listIndex.push_back(3);
+
+// 1
+listIndex.push_back(14);
+listIndex.push_back(15);
+listIndex.push_back(4);
+
+// 1
+listIndex.push_back(15);
+listIndex.push_back(16);
+listIndex.push_back(4);
+
+// 1
+listIndex.push_back(16);
+listIndex.push_back(5);
+listIndex.push_back(4);
+
+// 1
+listIndex.push_back(16);
+listIndex.push_back(17);
+listIndex.push_back(5);
+
+// 1
+listIndex.push_back(17);
+listIndex.push_back(6);
+listIndex.push_back(5);
+
+// 1
+listIndex.push_back(17);
+listIndex.push_back(7);
+listIndex.push_back(6);
+
+// 1
+listIndex.push_back(17);
+listIndex.push_back(18);
+listIndex.push_back(7);
+
+// 1
+listIndex.push_back(18);
+listIndex.push_back(19);
+listIndex.push_back(7);
+
+// 1
+listIndex.push_back(19);
+listIndex.push_back(8);
+listIndex.push_back(7);
+
+// 1
+listIndex.push_back(19);
+listIndex.push_back(9);
+listIndex.push_back(8);
+
+// 1
+listIndex.push_back(19);
+listIndex.push_back(20);
+listIndex.push_back(9);
+
+// 1
+listIndex.push_back(20);
+listIndex.push_back(10);
+listIndex.push_back(9);
+
+// 1
+listIndex.push_back(21);
+listIndex.push_back(10);
+listIndex.push_back(20);
+
+// 1
+listIndex.push_back(22);
+listIndex.push_back(10);
+listIndex.push_back(21);
+
+// 1
+listIndex.push_back(11);
+listIndex.push_back(10);
+listIndex.push_back(22);
+
+// 1
+listIndex.push_back(13);
+listIndex.push_back(11);
+listIndex.push_back(22);
+
+// 1
+listIndex.push_back(13);
+listIndex.push_back(12);
+listIndex.push_back(11);
+
+// Relleno trasero    
+// 1
+listIndex.push_back(12);
+listIndex.push_back(2);
+listIndex.push_back(11);
+
+// 1
+listIndex.push_back(2);
+listIndex.push_back(3);
+listIndex.push_back(11);
+
+// 1
+listIndex.push_back(11);
+listIndex.push_back(4);
+listIndex.push_back(10);
+
+// 1
+listIndex.push_back(11);
+listIndex.push_back(3);
+listIndex.push_back(4);
+
+// 1
+listIndex.push_back(10);
+listIndex.push_back(4);
+listIndex.push_back(9);
+
+// 1
+listIndex.push_back(9);
+listIndex.push_back(4);
+listIndex.push_back(5);
+
+// 1
+listIndex.push_back(9);
+listIndex.push_back(7);
+listIndex.push_back(8);
+
+// 1
+listIndex.push_back(9);
+listIndex.push_back(6);
+listIndex.push_back(7);
+
+// 1
+listIndex.push_back(9);
+listIndex.push_back(5);
+listIndex.push_back(6);
+
+// 1
+listIndex.push_back(5);
+listIndex.push_back(6);
+listIndex.push_back(9);
+
+// Parte de abajo
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(1);
+listIndex.push_back(2);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(2);
+listIndex.push_back(12);
+
+// 1
+listIndex.push_back(0);
+listIndex.push_back(12);
+listIndex.push_back(13);
+
+// 1
+listIndex.push_back(13);
+listIndex.push_back(0);
+listIndex.push_back(12);

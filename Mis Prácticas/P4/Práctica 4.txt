@@ -1,0 +1,5 @@
+- Solucionar el color de los ejes -> desactivando la luz antes de pintarlos y activandola despues
+- Se ven triangulos negros -> multiplicar por un número grande antes de calcular las normales
+- Cuando se escala o se hacen transformaciones se pierde la calidad de la luz -> activar GL_NORMALIZE
+- Meter los materiales dentro de los objetos
+- Tener una clase luz con la posición relativa al espectador o no, con las propiedades de la luz. Tendremos dos tipos de luz: posicional (siempre esta en el mismo sitio), luz direccional (siempre alumbra el objeto desde el infinito). Se tendra en la clase luz un parámetro donde guarda el tipo de luz.

@@ -1,0 +1,34 @@
+- Hacer una clase cámara
+
+	- Que controle las coordenadas polares.
+
+	- La clase cámara controlará el tipo de cámara: perspectiva u ortogonal (hay un método en escena que hace algo así. Utilizar glFrustum (perspectiva), glOrtho (ortogonal) Cuando se activa ortho, los objetos siempre se ven del mismo tamaño, no funcionaría el zoom a la vista.)
+
+	- Tener parámetros:
+		- Vector con la posición donde está.
+		- Vector con la dirección de la cámara (hacia donde mira).A partir de éste, se deduce el punto al que está mirando.
+		- Vector con la inclinación de la cámara (que se llame Up). Estará fijo en (0,1,0). Si la vista fuese desde arriba no serviría.
+		- Cuando haya que aplicar la configuración de la cámara se aplica con gluLookAt la configuración de los vectores.
+		- Tendrá 2 modos:
+			- Modo libre donde cambia la posición de la cámara pero no el punto al que mira.
+			- Modo orbital (que es como lo tenemos).
+
+- En escena habrá 2 funciones nuevas que controlan el ratón (botones y posición).
+	- Cuando se pulsa el botón del ratón se guardan las coordenadas x,y que se tenían para calcular la diferencia y hacer lo que haga falta.
+
+
+- En la selección no utilizar identificación por colores.
+- El nombre se le asigna antes de dibujar el objeto.
+
+
+
+
+- El zoom hacerlo lo último si sobra tiempo.
+
+
+
+
+- glInitName() para limpiar todos los identificadores.
+- Utilizar glPushname(i) en lugar de glLoadName(i).
+
+- En la página 9 del tema 4 vienen los métodos para seleccionar los objetos y para añadir los identificadores a los objetos.

@@ -1,0 +1,61 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Francisco Javier Caracuel Beltrán
+//
+// 3ºC - Subgrupo C2
+//
+// Práctica 2. Carga de archivos .PLY y generación de objetos por revolución.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+Instrucciones:
+
+1. Compilar con make (se creará un ejecutable en /bin).
+2. Ejecutar ./bin/practica2 sin ningún parámetro.
+3. El programa comienza cargando el perfil dado en vertical, unido al eje Y.
+4. Para cambiar por los distintos modos, teclear lo siguiente:
+
+	- p: modo de puntos.
+	- l: modo de líneas.
+	- s: modo sólido.
+	- a: modo ajedrez.
+	
+	- c: cubo.
+	- t: tetraedro.
+	- d: "diamante".
+	
+	- o: pide por consola un fichero .ply. Se puede introducir el nombre
+	     sin ninguna ruta si el fichero está en la raíz o en /data.
+	     
+	- x: genera por revolución un objeto con un perfil preestablecido
+	     con puntos variables del eje X. Si se quieren cambiar estos puntos
+	     se debe hacer en el método createOutline() de la clase ObjRevX.
+	- X (mayúscula): pide por consola un fichero .ply con el perfil del 
+	     objeto que se quiere visualizar con puntos variables del eje X.
+	     
+	- y: genera por revolución un objeto con un perfil preestablecido
+	     con puntos variables del eje Y. Si se quieren cambiar estos puntos
+	     se debe hacer en el método createOutline() de la clase ObjRevY.
+	- Y (mayúscula): pide por consola un fichero .ply con el perfil del 
+	     objeto que se quiere visualizar con puntos variables del eje Y.
+	     
+	- z: genera por revolución un objeto con un perfil preestablecido
+	     con puntos variables del eje Z. Si se quieren cambiar estos puntos
+	     se debe hacer en el método createOutline() de la clase ObjRevZ.
+	- Z (mayúscula): pide por consola un fichero .ply con el perfil del 
+	     objeto que se quiere visualizar con puntos variables del eje Z.
+	     
+	- +: solo funciona si existe cargado un objeto generado por revolución.
+	     Aumenta en 1 el número de caras del objeto por revolución.
+	     
+	- -: solo funciona si existe cargado un objeto generado por revolución.
+	     Disminuye en 1 el número de caras del objeto por revolución.
+	     Como mínimo tendrá 3 caras.
+	     
+	- /: solo funciona si existe cargado un objeto generado por revolución.
+	     Muestra u oculta la tapa superior del objeto por revolución.
+	     
+	- *: solo funciona si existe cargado un objeto generado por revolución.
+	     Muestra u oculta la tapa inferior del objeto por revolución.
+	     
+	     

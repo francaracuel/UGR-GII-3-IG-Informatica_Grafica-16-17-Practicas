@@ -1,0 +1,116 @@
+// 0
+listVertex.push_back(-0.3);
+listVertex.push_back(0);
+listVertex.push_back(0);
+
+// 1
+listVertex.push_back(0.3);
+listVertex.push_back(0);
+listVertex.push_back(0);
+
+// 2
+listVertex.push_back(0.2);
+listVertex.push_back(-0.2);
+listVertex.push_back(0);
+
+// 3
+listVertex.push_back(-0.2);
+listVertex.push_back(-0.2);
+listVertex.push_back(0);
+
+// 4
+listVertex.push_back(-0.1);
+listVertex.push_back(0);
+listVertex.push_back(1);
+
+// 5
+listVertex.push_back(0.1);
+listVertex.push_back(0);
+listVertex.push_back(1);
+
+// 6
+listVertex.push_back(0.1);
+listVertex.push_back(-0.1);
+listVertex.push_back(1);
+
+// 7
+listVertex.push_back(-0.1);
+listVertex.push_back(-0.1);
+listVertex.push_back(1);
+
+// 8
+listVertex.push_back(0);
+listVertex.push_back(-0.1);
+listVertex.push_back(1);
+
+
+
+// 0
+listIndex.push_back(7);
+listIndex.push_back(4);
+listIndex.push_back(0);
+
+// 0
+listIndex.push_back(3);
+listIndex.push_back(7);
+listIndex.push_back(0);
+
+// 0
+listIndex.push_back(3);
+listIndex.push_back(8);
+listIndex.push_back(7);
+
+// 0
+listIndex.push_back(3);
+listIndex.push_back(2);
+listIndex.push_back(8);
+
+// 0
+listIndex.push_back(2);
+listIndex.push_back(6);
+listIndex.push_back(8);
+
+// 0
+listIndex.push_back(2);
+listIndex.push_back(1);
+listIndex.push_back(6);
+
+// 0
+listIndex.push_back(6);
+listIndex.push_back(1);
+listIndex.push_back(5);
+
+// 0
+listIndex.push_back(8);
+listIndex.push_back(4);
+listIndex.push_back(7);
+
+// 0
+listIndex.push_back(8);
+listIndex.push_back(6);
+listIndex.push_back(5);
+
+// 0
+listIndex.push_back(8);
+listIndex.push_back(5);
+listIndex.push_back(4);
+
+// 0
+listIndex.push_back(0);
+listIndex.push_back(4);
+listIndex.push_back(5);
+
+// 0
+listIndex.push_back(5);
+listIndex.push_back(1);
+listIndex.push_back(0);
+
+// 0
+listIndex.push_back(3);
+listIndex.push_back(0);
+listIndex.push_back(1);
+
+// 0
+listIndex.push_back(2);
+listIndex.push_back(3);
+listIndex.push_back(1);

@@ -1,0 +1,167 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Francisco Javier Caracuel Beltrán
+//
+// Práctica 5
+//
+// practica5.cc
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include "stdlib.h"
+#include "stdio.h"
+#include <GL/glut.h>
+#include <ctype.h>
+#include "escena.h"
+
+Escena *escena;
+
+void draw_scene(void) {
+    if (escena != NULL) escena->dibujar();
+    glutSwapBuffers();
+}
+
+
+//***************************************************************************
+// Funcion llamada cuando se produce un cambio en el tamaño de la ventana
+//
+// el evento manda a la funcion:
+// nuevo ancho
+// nuevo alto
+//***************************************************************************
+
+void change_window_size(int newWidth, int newHeight) {
+    if (escena != NULL) escena->redimensionar(newWidth, newHeight);
+    glutPostRedisplay();
+}
+
+
+//***************************************************************************
+// Funcion llamada cuando se produce aprieta una tecla normal
+//
+// el evento manda a la funcion:
+// codigo de la tecla
+// posicion x del raton
+// posicion y del raton
+//***************************************************************************
+
+void normal_keys(unsigned char Tecla1, int x, int y) {
+
+    int salir = 0;
+    if (escena != NULL) salir = escena->teclaPulsada(Tecla1, x, y);
+    if (salir) {
+        delete escena;
+        exit(0);
+    } else
+        glutPostRedisplay();
+}
+
+//***************************************************************************
+// Funcion llamada cuando se produce aprieta una tecla especial
+//
+// el evento manda a la funcion:
+// codigo de la tecla
+// posicion x del raton
+// posicion y del raton
+
+//***************************************************************************
+
+void special_keys(int Tecla1, int x, int y) {
+    if (escena != NULL)
+        escena->teclaEspecial(Tecla1, x, y);
+    glutPostRedisplay();
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Función que se ejecuta cuando no tiene nada que hacer
+//
+void idle(){
+    
+    escena->idle();
+        
+    glutPostRedisplay();
+    
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Evento cuando se pulsa el botón
+//
+void click(int button, int state, int x, int y){
+    
+    escena->click(button, state, x, y);
+            
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Evento cuando se mueve el ratón
+//
+void move(int x, int y){
+    
+    escena->move(x, y);
+        
+    glutPostRedisplay();
+    
+}
+
+
+//***************************************************************************
+// Programa principal
+//
+// Se encarga de iniciar la ventana, asignar las funciones e comenzar el
+// bucle de eventos
+//***************************************************************************
+
+int main(int argc, char **argv) {
+
+    escena = new Escena();
+
+    // se llama a la inicialización de glut
+    glutInit(&argc, argv);
+
+    // se indica las caracteristicas que se desean para la visualización con OpenGL
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
+
+    // variables que determninan la posicion y tamaño de la ventana X
+    int UI_window_pos_x = 50, UI_window_pos_y = 50, UI_window_width = 700, UI_window_height = 700;
+    
+    // Mi resolución de pantalla. 
+    // Al tener doble monitor, Ubuntu no me lo detecta
+    // bien y tengo que poner la resolución a mano en lugar de utilizar
+    // glutGet(GLUT_SCREEN_WIDTH) y glutGet(GLUT_SCREEN_HEIGHT)
+    int myWidth = 1360, myHeight = 768;
+
+    // posicion de la esquina inferior izquierda de la ventana
+    glutInitWindowPosition((myWidth-UI_window_width)/2, (myHeight-UI_window_height)/2);
+    // tamaño de la ventana (ancho y alto)
+    glutInitWindowSize(UI_window_width, UI_window_height);
+
+    // llamada para crear la ventana, indicando el titulo
+    glutCreateWindow("Práctica 4: Francisco Javier Caracuel Beltrán");
+
+    // asignación de la funcion llamada "dibujar" al evento de dibujo
+    glutDisplayFunc(draw_scene);
+    // asignación de la funcion llamada "cambiar_tamanio_ventana" al evento correspondiente
+    glutReshapeFunc(change_window_size);
+    // asignación de la funcion llamada "tecla_normal" al evento correspondiente
+    glutKeyboardFunc(normal_keys);
+    // asignación de la funcion llamada "tecla_Especial" al evento correspondiente
+    glutSpecialFunc(special_keys);
+
+    // funcion de inicialización
+    escena->inicializar(UI_window_width, UI_window_height);
+        
+    // Función que se ejecuta cuando no tiene nada que hacer
+    glutIdleFunc(idle);
+    
+    // Función para controlar el ratón
+    glutMouseFunc(click);
+    glutMotionFunc(move);
+    
+    // inicio del bucle de eventos
+    glutMainLoop();
+    
+    return 0;
+}

@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Francisco Javier Caracuel Beltrán
+//
+// Práctica 4
+//
+// tetrahedron.h
+//
+////////////////////////////////////////////////////////////////////////////////
+
+#ifndef _TETRAHEDRON_H
+#define _TETRAHEDRON_H
+
+#include "obj3D.h"
+
+class Tetrahedron : public Obj3D {
+    
+public:
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // Constructor
+    //
+    // Crea la geometría del tetraedro
+    //
+    Tetrahedron();
+    
+    Tetrahedron(string nameTexture, bool generateAutomatic);
+        
+    ////////////////////////////////////////////////////////////////////////////
+    // Crea la geometría del tetraedro que se quiere dibujar
+    //
+    void createGeometry();
+
+};
+
+#endif

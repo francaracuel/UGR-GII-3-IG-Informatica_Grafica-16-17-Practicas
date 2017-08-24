@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// Francisco Javier Caracuel Beltrán
+//
+// 3ºC - Subgrupo C2
+//
+// Práctica 4. Iluminación, materiales y texturas
+//
+////////////////////////////////////////////////////////////////////////////////
+
+Instrucciones:
+
+1. Compilar con make (se creará un ejecutable en /bin).
+2. Ejecutar ./bin/practica2 sin ningún parámetro.
+3. El programa comienza cargando el objeto jerárquico.
+4. Existen 2 modos:
+
+	- Común para ambos modos:
+
+		- p: modo de puntos.
+		- l: modo de líneas.
+		- s: modo sólido.
+		- a: modo ajedrez.
+		
+		- 1: activa modo 1 y visualiza un objeto PLY.
+		- 2: activa modo 1 y visualiza un objeto por revolución.
+		- 3: activa el objeto jerárquico.
+		
+	- Modo 1:
+	
+		- c: cubo.
+		- t: tetraedro.
+		- d: "diamante".
+	
+		- o: pide por consola un fichero .ply. Se puede introducir el nombre
+		     sin ninguna ruta si el fichero está en la raíz o en /data.
+		     
+		- x: genera por revolución un objeto con un perfil preestablecido
+		     con puntos variables del eje X. Si se quieren cambiar estos puntos
+		     se debe hacer en el método createOutline() de la clase ObjRevX.
+		- X (mayúscula): pide por consola un fichero .ply con el perfil del 
+		     objeto que se quiere visualizar con puntos variables del eje X.
+		     
+		- y: genera por revolución un objeto con un perfil preestablecido
+		     con puntos variables del eje Y. Si se quieren cambiar estos puntos
+		     se debe hacer en el método createOutline() de la clase ObjRevY.
+		- Y (mayúscula): pide por consola un fichero .ply con el perfil del 
+		     objeto que se quiere visualizar con puntos variables del eje Y.
+		     
+		- z: genera por revolución un objeto con un perfil preestablecido
+		     con puntos variables del eje Z. Si se quieren cambiar estos puntos
+		     se debe hacer en el método createOutline() de la clase ObjRevZ.
+		- Z (mayúscula): pide por consola un fichero .ply con el perfil del 
+		     objeto que se quiere visualizar con puntos variables del eje Z.
+		     
+		- +: solo funciona si existe cargado un objeto generado por revolución.
+		     Aumenta en 1 el número de caras del objeto por revolución.
+		     
+		- -: solo funciona si existe cargado un objeto generado por revolución.
+		     Disminuye en 1 el número de caras del objeto por revolución.
+		     Como mínimo tendrá 3 caras.
+		     
+		- /: solo funciona si existe cargado un objeto generado por revolución.
+		     Muestra u oculta la tapa superior del objeto por revolución.
+		     
+		- *: solo funciona si existe cargado un objeto generado por revolución.
+		     Muestra u oculta la tapa inferior del objeto por revolución.
+		     
+	- Modo 2:
+	
+		- 6: activa/desactiva el movimiento de la lengua.
+		- Z/z: mueve la lengua.
+		- B/b: aumenta/disminuye la velocidad de la lengua.
+	
+		- 7: activa/desactiva el movimiento de la boca.
+		- X/x: mueve la boca.
+		- N/n: aumenta/disminuye la velocidad de la boca.
+	
+		- 8: activa/desactiva el movimiento de las orejas.
+		- C/c: mueve las orejas.
+		- M/m: aumenta/disminuye la velocidad de las orejas.
+	
+		- 9: activa/desactiva el movimiento de los ojos.
+		- W/w: mueve los ojos.
+		- R/r: aumenta/disminuye la velocidad de los ojos.
+	
+		- 0: activa/desactiva el movimiento de la cabeza.
+		- E/e: mueve la cabeza.
+		- T/t: aumenta/disminuye la velocidad de la cabeza.
+		
+		- +: aumenta la velocidad de todos los componentes.
+		- -: disminuye la velocidad de todos los componentes.
+	     
+	     
